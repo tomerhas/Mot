@@ -1,0 +1,37 @@
+
+
+
+<suite  name="Mot64 Suite"  >
+
+    <test name="Sanity Chrome"  >
+    
+    <parameter name="browser" value="Chrome" />
+    
+	
+
+		<classes>
+		
+            <class name="testCases.Sanity" /> 
+	       
+            
+		</classes>
+		
+		  </test>
+		  
+		   <test name="Sanity Ie">
+    
+    <parameter name="browser" value="ie" />
+    
+	
+
+		<classes>
+		
+            <class name="testCases.Sanity" /> 
+	       
+            
+		</classes>
+		  
+		  	  </test>
+		  
+		  
+		  </suite>
