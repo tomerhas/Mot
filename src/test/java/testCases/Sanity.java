@@ -38,6 +38,7 @@ public class Sanity extends Base {
 
 		Assertiones.assertValueExists(OriginDestination.scheduleClicked,
 				"לוח זמנים ותחנות");
+		//aa
 
 	}
 
