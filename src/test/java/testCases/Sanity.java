@@ -12,7 +12,6 @@ import workFlows.MainFlow;
 import workFlows.OriginDestFlow;
 
 public class Sanity extends Base {
-
 	@Test
 	public void f() {
 
