@@ -94,8 +94,9 @@ public class WaitTo {
 	 public static void waitForElementVisible ( WebDriver driver, WebElement element   )  {
 		 
 		 
-	      WebDriverWait wait1 = new WebDriverWait(driver, 30);
-	      wait1.until(ExpectedConditions.visibilityOf(element));
+	      WebDriverWait wait = new WebDriverWait(driver, 30);
+	      wait.until(ExpectedConditions.visibilityOf(element));
+	      
 		 
 		 
 	 }

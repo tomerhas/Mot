@@ -21,6 +21,7 @@ public class OriginDestFlow {
 		
 		OriginDestination.byDestToCity.click();	
 		OriginDestination.byDestToCity.sendKeys(destinition);
+		OriginDestination.byDestToCity.sendKeys(Keys.ARROW_DOWN);
 		OriginDestination.byDestToCity.sendKeys(Keys.ENTER);
 		
 		

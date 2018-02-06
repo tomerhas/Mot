@@ -41,6 +41,10 @@ public class MainObjects extends Base  {
 	public static  WebElement buttonSwitchDirection ;
 	
 	
+	@FindBy(how = How.XPATH, using = "/html/body[@class='ng-scope rtl']/div[@class='MainBody  no-print ng-scope']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[1]/td/div/div[@class='DisplayTableRowBreakable']/div[1]/ul[@class='tablist']/li[3]/a[@class='SearchTabWrapperChosen1']/div/div[@class='SearchTabMid']/h1[@class='SearchTabMidHeb ng-scope']")
+	public static  WebElement tabLineNumber ;
+	
+	
 	public static WebElement  buttonSwitchDirection ( WebDriver driver ){
 		
 		  element = driver.findElement(By.className("btnSwitchDirection1"));

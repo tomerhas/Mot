@@ -36,6 +36,13 @@ public class OriginDestination extends Base {
 	public static  WebElement scheduleClicked ;
 	
 	
+	@FindBy(how = How.CLASS_NAME, using = "ComboButton")
+	public static  WebElement placeInOriginCombo ;
+	
+	
+	
+	
+	
 	
 	
 	

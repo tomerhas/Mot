@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34324" started-at="2018-02-04T09:22:58Z" finished-at="2018-02-04T09:23:32Z">
+  <suite name="Default suite" duration-ms="21185" started-at="2018-02-06T14:46:59Z" finished-at="2018-02-06T14:47:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34324" started-at="2018-02-04T09:22:58Z" finished-at="2018-02-04T09:23:32Z">
+    <test name="Default test" duration-ms="21185" started-at="2018-02-06T14:46:59Z" finished-at="2018-02-06T14:47:20Z">
       <class name="testCases.Sanity">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.Sanity@78e117e3]" name="beforeClass" is-config="true" duration-ms="89" started-at="2018-02-04T11:22:58Z" finished-at="2018-02-04T11:22:58Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.Sanity@735b5592]" name="beforeClass" is-config="true" duration-ms="9" started-at="2018-02-06T16:46:59Z" finished-at="2018-02-06T16:46:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:testCases.Sanity@78e117e3]" name="createDriver" is-config="true" duration-ms="23706" started-at="2018-02-04T11:22:58Z" finished-at="2018-02-04T11:23:22Z">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:testCases.Sanity@735b5592]" name="createDriver" is-config="true" duration-ms="4975" started-at="2018-02-06T16:46:59Z" finished-at="2018-02-06T16:47:04Z">
           <params>
             <param index="0">
               <value>
@@ -22,27 +22,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.Sanity@78e117e3]" name="beforeMethod" is-config="true" duration-ms="529" started-at="2018-02-04T11:23:22Z" finished-at="2018-02-04T11:23:22Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.Sanity@735b5592]" name="beforeMethod" is-config="true" duration-ms="94" started-at="2018-02-06T16:47:04Z" finished-at="2018-02-06T16:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:testCases.Sanity@78e117e3]" name="f" duration-ms="8909" started-at="2018-02-04T11:23:22Z" finished-at="2018-02-04T11:23:31Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="f()[pri:0, instance:testCases.Sanity@735b5592]" name="f" duration-ms="15097" started-at="2018-02-06T16:47:04Z" finished-at="2018-02-06T16:47:19Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body[@class='ng-scope rtl']/div[@class='MainBody  no-print ng-scope']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[1]/td/div/div[@class='DisplayTableRowBreakable']/div[1]/ul[@class='tablist']/li[3]/a[@class='SearchTabWrapperChosen1']/div/div[@class='SearchTabMid']/h1[@class='SearchTabMidHeb ng-scope']"}
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'A25595', ip: '10.0.6.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\tomerh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.84, webStorageEnabled: true}
+Session ID: 894d0a909924ec41e52dcc65ddaf3a9d
+*** Element info: {Using=xpath, value=/html/body[@class='ng-scope rtl']/div[@class='MainBody  no-print ng-scope']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[1]/td/div/div[@class='DisplayTableRowBreakable']/div[1]/ul[@class='tablist']/li[3]/a[@class='SearchTabWrapperChosen1']/div/div[@class='SearchTabMid']/h1[@class='SearchTabMidHeb ng-scope']}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at utilities.WaitTo.waitForElementVisible(WaitTo.java:98)
-	at testCases.Sanity.f(Sanity.java:19)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body[@class='ng-scope rtl']/div[@class='MainBody  no-print ng-scope']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[1]/td/div/div[@class='DisplayTableRowBreakable']/div[1]/ul[@class='tablist']/li[3]/a[@class='SearchTabWrapperChosen1']/div/div[@class='SearchTabMid']/h1[@class='SearchTabMidHeb ng-scope']"}
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'A25595', ip: '10.0.6.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\tomerh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.84, webStorageEnabled: true}
+Session ID: 894d0a909924ec41e52dcc65ddaf3a9d
+*** Element info: {Using=xpath, value=/html/body[@class='ng-scope rtl']/div[@class='MainBody  no-print ng-scope']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[1]/td/div/div[@class='DisplayTableRowBreakable']/div[1]/ul[@class='tablist']/li[3]/a[@class='SearchTabWrapperChosen1']/div/div[@class='SearchTabMid']/h1[@class='SearchTabMidHeb ng-scope']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at workFlows.MainFlow.clickTabLineNumber(MainFlow.java:42)
+	at testCases.Sanity.f(Sanity.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -69,11 +100,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.Sanity@78e117e3]" name="afterMethod" is-config="true" duration-ms="713" started-at="2018-02-04T11:23:32Z" finished-at="2018-02-04T11:23:32Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.Sanity@735b5592]" name="afterMethod" is-config="true" duration-ms="994" started-at="2018-02-06T16:47:19Z" finished-at="2018-02-06T16:47:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

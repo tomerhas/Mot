@@ -7,7 +7,7 @@ public class ReadText {
 	
 	public  static String   getText ( WebElement element    )   {
 		
-		 element.getText();
+		element.getText();
 		return  element.getText();
 		
 		

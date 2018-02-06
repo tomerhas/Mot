@@ -13,10 +13,16 @@ import workFlows.OriginDestFlow;
 
 public class Sanity extends Base {
 	@Test
-	public void f() {
-
+	public void changeDirection() {
+		
 		OriginDestFlow.typeDestFromCity("חיפה");
+		System.out.println(OriginDestination.placeInOriginCombo.isDisplayed());
+		System.out.println(OriginDestination.placeInOriginCombo.getSize());
+		
+		WaitTo.waitForElementVisible(driver, OriginDestination.placeInOriginCombo);
 		WaitTo.waitForElementVisible(driver, OriginDestination.placeInOrigin);
+		
+		
 
 		Assertiones.assertValueExists(OriginDestination.placeInOrigin,
 				"מרכזית חוף הכרמל");
@@ -38,9 +44,25 @@ public class Sanity extends Base {
 
 		Assertiones.assertValueExists(OriginDestination.scheduleClicked,
 				"לוח זמנים ותחנות");
-		//aa
+		
 
 	}
+	
+	
+	@Test
+	
+	public void f() {
+		
+		
+		MainFlow.clickTabLineNumber();
+		
+		
+		
+		
+	}
+	
+	
+	
 
 	@BeforeMethod
 	public void beforeMethod() {

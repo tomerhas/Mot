@@ -37,6 +37,15 @@ public class MainFlow  extends Base  {
 	 
 	 
 	 
+	 public static void clickTabLineNumber () {
+		 
+		 MainObjects.tabLineNumber.click();
+		 
+		 
+	 }
+	 
+	 
+	 
 	
 	
 	
