@@ -1,10 +1,13 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 
 import utilities.Base;
@@ -41,8 +44,15 @@ public class MainObjects extends Base  {
 	public static  WebElement buttonSwitchDirection ;
 	
 	
-	@FindBy(how = How.XPATH, using = "/html/body[@class='ng-scope rtl']/div[@class='MainBody  no-print ng-scope']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[1]/td/div/div[@class='DisplayTableRowBreakable']/div[1]/ul[@class='tablist']/li[3]/a[@class='SearchTabWrapperChosen1']/div/div[@class='SearchTabMid']/h1[@class='SearchTabMidHeb ng-scope']")
+
+	
+	@FindBy(how = How.CLASS_NAME, using = "SearchTabWrapper1")
 	public static  WebElement tabLineNumber ;
+	
+	
+	
+	@FindBy(how = How.CLASS_NAME, using = "userMessage")
+	public static  WebElement userMessage ;
 	
 	
 	public static WebElement  buttonSwitchDirection ( WebDriver driver ){

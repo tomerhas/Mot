@@ -15,6 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import pageObjects.LineNumber;
 import pageObjects.MainObjects;
 import pageObjects.OriginDestination;
 
@@ -28,6 +29,7 @@ public  abstract class Base {
 	public OriginDestination   origindestination ;
 	public WaitTo wait;
 	public MainObjects mainobjects ; 
+	public LineNumber linenumber;
   
 	
 
@@ -53,6 +55,12 @@ public void initMainObjects()
 	mainobjects = PageFactory.initElements(driver,MainObjects.class);
 }
 
+
+
+public void initLineNumber()
+{
+	linenumber = PageFactory.initElements(driver,LineNumber.class);
+}
 
 	
 	

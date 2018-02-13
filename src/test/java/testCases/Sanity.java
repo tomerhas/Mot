@@ -3,11 +3,14 @@ package testCases;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeClass;
+
 import extensiones.Assertiones;
+import pageObjects.LineNumber;
 import pageObjects.MainObjects;
 import pageObjects.OriginDestination;
 import utilities.Base;
 import utilities.WaitTo;
+import workFlows.LineNumberFlow;
 import workFlows.MainFlow;
 import workFlows.OriginDestFlow;
 
@@ -51,15 +54,36 @@ public class Sanity extends Base {
 	
 	@Test
 	
-	public void f() {
+	public void assertOriginNotExists () {
 		
 		
 		MainFlow.clickTabLineNumber();
+		LineNumberFlow.typeDestFromCity("אסמאעיל");
+		Assertiones.assertValueExists(MainObjects.userMessage, "אין שירות לישוב אסמאעיל");
 		
-		
-		
-		
+					
 	}
+	
+	
+	@Test
+	
+	
+	public void assertOriginNotExistsInDay (){
+		
+	 MainFlow.clickTabLineNumber();
+	 LineNumberFlow.selectDate("17/02/2018 - יום ש");
+	 LineNumberFlow.typeDestFromCity("כפר נט");
+	 Assertiones.assertValueExists(LineNumber.massegeOriginNotExistsInDay, "לישוב כפר נטר אין שירות ביום מבוקש. בחר יום אחר.");
+	 System.out.println(linenumber.dateInMassege.getText());
+	 
+	 
+	
+								
+	}
+	
+	
+	
+	
 	
 	
 	
@@ -70,6 +94,7 @@ public class Sanity extends Base {
 		initMainObjects();
 		initOriginDestination();
 		initWait();
+		initLineNumber();
 
 	}
 
