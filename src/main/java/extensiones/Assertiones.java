@@ -8,10 +8,9 @@ public class Assertiones {
 	
 
 	
+		
 	
-	
-	
-	public  static void  assertValueExists ( WebElement element ,  String expected   ) 
+	public  static void  assertValueExists ( WebElement element  , String expected   ) 
 	
 	{
 		
@@ -21,7 +20,14 @@ public class Assertiones {
 	}
 	
 	
+	public  static void  assertValueExistsString ( String actual  , String expected   ) 
 	
+	{
+		
+		Assert.assertEquals   ( actual,expected);
+		
+		
+	}
 	
 	
 	

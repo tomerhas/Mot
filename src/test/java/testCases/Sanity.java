@@ -1,10 +1,14 @@
 package testCases;
 
+import java.util.Arrays;
+
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeClass;
 
 import extensiones.Assertiones;
+import extensiones.SelectFrom;
+import extensiones.Split;
 import pageObjects.LineNumber;
 import pageObjects.MainObjects;
 import pageObjects.OriginDestination;
@@ -71,10 +75,18 @@ public class Sanity extends Base {
 	public void assertOriginNotExistsInDay (){
 		
 	 MainFlow.clickTabLineNumber();
-	 LineNumberFlow.selectDate("17/02/2018 - יום ש");
-	 LineNumberFlow.typeDestFromCity("כפר נט");
-	 Assertiones.assertValueExists(LineNumber.massegeOriginNotExistsInDay, "לישוב כפר נטר אין שירות ביום מבוקש. בחר יום אחר.");
-	 System.out.println(linenumber.dateInMassege.getText());
+	 //System.out.println(LineNumberFlow.splitDate());
+	 System.out.println(LineNumber.bylineDateSelect.getText());
+	 System.out.println(LineNumber.dates.size());
+	 //System.out.println(SelectFrom.getIndexBy(LineNumber.dates, "יום ש"));
+	 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ש");
+	 //SelectFrom.selectByPartOfVisibleText(LineNumber.dates,"יום ש");
+	 //LineNumberFlow.selectDate(" יום ש");
+	 //System.out.println(LineNumberFlow.splitMessage());
+	 LineNumberFlow.typeDestFromCity("כפר נטר");
+	 System.out.println(MainObjects.userMessage.getText());
+	 Assertiones.assertValueExistsString(LineNumberFlow.getTextFromMessageNoServiceInSaturday("\\."), "לישוב כפר נטר אין שירות ביום מבוקש. בחר יום אחר.");
+	 //System.out.println(linenumber.dateInMassege.getText());
 	 
 	 
 	

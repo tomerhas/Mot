@@ -55,6 +55,10 @@ public class MainObjects extends Base  {
 	public static  WebElement userMessage ;
 	
 	
+	@FindBy(how = How.XPATH, using = "/html/body[@class='rtl ng-scope']/div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-front common-dialog-wrapper ui-draggable']/div")
+	public static  WebElement userMessage1 ;
+	
+	
 	public static WebElement  buttonSwitchDirection ( WebDriver driver ){
 		
 		  element = driver.findElement(By.className("btnSwitchDirection1"));
