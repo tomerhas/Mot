@@ -85,7 +85,7 @@ public class Sanity extends Base {
 	 //System.out.println(LineNumberFlow.splitMessage());
 	 LineNumberFlow.typeDestFromCity("כפר נטר");
 	 System.out.println(MainObjects.userMessage.getText());
-	 Assertiones.assertValueExistsString(LineNumberFlow.getTextFromMessageNoServiceInSaturday("\\."), "לישוב כפר נטר אין שירות ביום מבוקש. בחר יום אחר.");
+	 Assertiones.assertValueExistsString(LineNumberFlow.getTextFromMessageNoServiceInSaturday("\\."), "לישוב כפר נטר אין שירות ביום מבוקש בחר יום אחר");
 	 //System.out.println(linenumber.dateInMassege.getText());
 	 
 	 

@@ -36,7 +36,7 @@ public class LineNumberFlow  extends Base {
 	   
 	   public static String  getTextFromMessageNoServiceInSaturday (String symbol)  {
 		   
-		 String[] parts = Split.splitText(MainObjects.userMessage, "(symbol)" );
+		 String[] parts = Split.splitText(MainObjects.userMessage, symbol );
 		 String part1 = parts[0];
 		 String part2=parts[1];
 		 return part1+part2;
