@@ -1,7 +1,10 @@
 package workFlows;
 
+import java.util.List;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import extensiones.SelectFrom;
 import extensiones.Split;
@@ -45,6 +48,28 @@ public class LineNumberFlow  extends Base {
 		   
 	   }
 	   
+	   
+	   
+	   public static void  clickDatesMessage ( List<WebElement> list , String text  )  {
+		   
+		   
+		   list.get(SelectFrom.getIndexBy(list, text)).click();
+		   
+		   
+		   
+	   }
+	   
+	   
+	   
+	   
+	   public static void  typeLineNum( String text  )  {
+		   
+		   LineNumber.lineNumCombo.click();
+		   LineNumber.lineNumList.sendKeys(text);
+		   LineNumber.lineNumList.sendKeys(Keys.ENTER);
+		   
+		   
+	   }
 	   
 	   
 	

@@ -75,18 +75,24 @@ public class Sanity extends Base {
 	public void assertOriginNotExistsInDay (){
 		
 	 MainFlow.clickTabLineNumber();
-	 //System.out.println(LineNumberFlow.splitDate());
-	 System.out.println(LineNumber.bylineDateSelect.getText());
-	 System.out.println(LineNumber.dates.size());
-	 //System.out.println(SelectFrom.getIndexBy(LineNumber.dates, "יום ש"));
-	 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ש");
-	 //SelectFrom.selectByPartOfVisibleText(LineNumber.dates,"יום ש");
-	 //LineNumberFlow.selectDate(" יום ש");
-	 //System.out.println(LineNumberFlow.splitMessage());
-	 LineNumberFlow.typeDestFromCity("כפר נטר");
-	 System.out.println(MainObjects.userMessage.getText());
-	 Assertiones.assertValueExistsString(LineNumberFlow.getTextFromMessageNoServiceInSaturday("\\."), "לישוב כפר נטר אין שירות ביום מבוקש בחר יום אחר");
-	 //System.out.println(linenumber.dateInMassege.getText());
+		 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ש");
+		 LineNumberFlow.typeDestFromCity("כפר נטר");
+	 	 Assertiones.assertValueExistsString(LineNumberFlow.getTextFromMessageNoServiceInSaturday("\\."), "לישוב כפר נטר אין שירות ביום מבוקש בחר יום אחר");
+	 System.out.println(SelectFrom.getIndexBy(LineNumber.DatesMessage, "ה"));
+	 LineNumberFlow.clickDatesMessage(LineNumber.DatesMessage, "ה");
+	 LineNumberFlow.typeLineNum("43");
+	 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ו");
+	 Assertiones.assertValueExists(MainObjects.userMessage, "קו לא פעיל ב יום ו");
+	 
+	 
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 
 	 
 	 
 	

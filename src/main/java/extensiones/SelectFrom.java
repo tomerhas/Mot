@@ -15,6 +15,18 @@ public class SelectFrom   {
 	static String optionIndex;
 
 
+	
+	public static void select ( WebElement element , String value )  {
+		
+		Select select = new Select(element);
+		
+		
+		
+		
+	}
+	
+	
+	
 	public static void  selectFromList(List<WebElement> list ,WebElement element ,String text){
 		
 		
@@ -26,7 +38,7 @@ public class SelectFrom   {
 	
 	
 		public static int  getIndexBy(List<WebElement> list , String text   ) {
-	    //List<WebElement> dates = LineNumber.dates;
+	  
 
 	    for (WebElement date: list) {
 	        if (date.getText().contains(text)) {
@@ -35,9 +47,7 @@ public class SelectFrom   {
 	           					            				       					        			
 	           					           				
 					                   }
-	      
-	       //return String.valueOf('0');
-	    }
+	      	      	    }
 	    return 350;
 	}
 	
