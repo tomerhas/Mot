@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22399" started-at="2018-03-19T14:48:58Z" finished-at="2018-03-19T14:49:20Z">
+  <suite name="Default suite" duration-ms="5949" started-at="2018-03-26T07:23:49Z" finished-at="2018-03-26T07:23:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22399" started-at="2018-03-19T14:48:58Z" finished-at="2018-03-19T14:49:20Z">
+    <test name="Default test" duration-ms="5949" started-at="2018-03-26T07:23:49Z" finished-at="2018-03-26T07:23:55Z">
       <class name="testCases.Sanity">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.Sanity@735b5592]" name="beforeClass" is-config="true" duration-ms="6" started-at="2018-03-19T16:48:58Z" finished-at="2018-03-19T16:48:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:testCases.Sanity@735b5592]" name="createDriver" is-config="true" duration-ms="4384" started-at="2018-03-19T16:48:58Z" finished-at="2018-03-19T16:49:02Z">
+        <test-method status="PASS" signature="createDriver(java.lang.String)[pri:0, instance:testCases.Sanity@735b5592]" name="createDriver" is-config="true" duration-ms="4294" started-at="2018-03-26T10:23:49Z" finished-at="2018-03-26T10:23:53Z">
           <params>
             <param index="0">
               <value>
@@ -22,89 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.Sanity@735b5592]" name="beforeMethod" is-config="true" duration-ms="82" started-at="2018-03-19T16:49:02Z" finished-at="2018-03-19T16:49:02Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.Sanity@735b5592]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-03-26T10:23:49Z" finished-at="2018-03-26T10:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.Sanity@735b5592]" name="beforeMethod" is-config="true" duration-ms="79" started-at="2018-03-26T10:23:53Z" finished-at="2018-03-26T10:23:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="assertOriginNotExistsInDay()[pri:0, instance:testCases.Sanity@735b5592]" name="assertOriginNotExistsInDay" duration-ms="17019" started-at="2018-03-19T16:49:02Z" finished-at="2018-03-19T16:49:19Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body[@class='rtl ng-scope']/div[@class='MainBody  no-print']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[2]/td/div[@class='searchSubView ng-scope']/div[@class='ng-scope']/div[@class='SearchPageInnerPanel']/fieldset[@class='SearchSection2 search-panel1']/div[@class='not-padding']/div/div[@class='DisplayTableRowBreakable byLine'][1]/div[1]/div/div[3]/div[@id='lineNumberCombo']/div[@class='cb quarterList ComboPopup']/div[1]/input[@class='cb_edit autoCompleteValue ComboTextFilter ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse']"}
-  (Session info: chrome=63.0.3239.132)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'A25595', ip: '10.0.5.183', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\tomerh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: e63048c7cbd0338f0d364d6393bc0851
-*** Element info: {Using=xpath, value=/html/body[@class='rtl ng-scope']/div[@class='MainBody  no-print']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[2]/td/div[@class='searchSubView ng-scope']/div[@class='ng-scope']/div[@class='SearchPageInnerPanel']/fieldset[@class='SearchSection2 search-panel1']/div[@class='not-padding']/div/div[@class='DisplayTableRowBreakable byLine'][1]/div[1]/div/div[3]/div[@id='lineNumberCombo']/div[@class='cb quarterList ComboPopup']/div[1]/input[@class='cb_edit autoCompleteValue ComboTextFilter ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body[@class='rtl ng-scope']/div[@class='MainBody  no-print']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[2]/td/div[@class='searchSubView ng-scope']/div[@class='ng-scope']/div[@class='SearchPageInnerPanel']/fieldset[@class='SearchSection2 search-panel1']/div[@class='not-padding']/div/div[@class='DisplayTableRowBreakable byLine'][1]/div[1]/div/div[3]/div[@id='lineNumberCombo']/div[@class='cb quarterList ComboPopup']/div[1]/input[@class='cb_edit autoCompleteValue ComboTextFilter ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse']"}
-  (Session info: chrome=63.0.3239.132)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'A25595', ip: '10.0.5.183', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\tomerh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: e63048c7cbd0338f0d364d6393bc0851
-*** Element info: {Using=xpath, value=/html/body[@class='rtl ng-scope']/div[@class='MainBody  no-print']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[2]/td/div[@class='searchSubView ng-scope']/div[@class='ng-scope']/div[@class='SearchPageInnerPanel']/fieldset[@class='SearchSection2 search-panel1']/div[@class='not-padding']/div/div[@class='DisplayTableRowBreakable byLine'][1]/div[1]/div/div[3]/div[@id='lineNumberCombo']/div[@class='cb quarterList ComboPopup']/div[1]/input[@class='cb_edit autoCompleteValue ComboTextFilter ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at workFlows.LineNumberFlow.typeLineNum(LineNumberFlow.java:68)
-	at testCases.Sanity.assertOriginNotExistsInDay(Sanity.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="assertlineBetweenOriginClear()[pri:0, instance:testCases.Sanity@735b5592]" name="assertlineBetweenOriginClear" duration-ms="669" started-at="2018-03-26T10:23:53Z" finished-at="2018-03-26T10:23:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertOriginNotExistsInDay -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.Sanity@735b5592]" name="afterMethod" is-config="true" duration-ms="892" started-at="2018-03-19T16:49:19Z" finished-at="2018-03-19T16:49:20Z">
+        </test-method> <!-- assertlineBetweenOriginClear -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.Sanity@735b5592]" name="afterMethod" is-config="true" duration-ms="891" started-at="2018-03-26T10:23:54Z" finished-at="2018-03-26T10:23:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

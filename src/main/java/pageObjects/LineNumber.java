@@ -45,13 +45,13 @@ public class LineNumber extends Base {
 		public static  WebElement lineNumCombo ;
 		
 		
-		//@FindBy(how = How.CLASS_NAME , using = "selectedItemDiv")
-		//public static  WebElement lineNumList ;
+		@FindBy(how = How.CLASS_NAME , using = "cb_edit")
+		public static  WebElement lineNumList ;
 		
 		
-		 @FindBy(how=How.XPATH, using="/html/body[@class='rtl ng-scope']/div[@class='MainBody  no-print']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[2]/td/div[@class='searchSubView ng-scope']/div[@class='ng-scope']/div[@class='SearchPageInnerPanel']/fieldset[@class='SearchSection2 search-panel1']/div[@class='not-padding']/div/div[@class='DisplayTableRowBreakable byLine'][1]/div[1]/div/div[3]/div[@id='lineNumberCombo']/div[@class='cb quarterList ComboPopup']/div[1]/input[@class='cb_edit autoCompleteValue ComboTextFilter ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse']")
+		 //@FindBy(how=How.XPATH, using="/html/body[@class='rtl ng-scope']/div[@class='MainBody  no-print']/div[@class='main-site ng-scope']/div[@class='ng-scope'][1]/div[@class='filterTabControl ']/table/tbody/tr[2]/td/div[@class='searchSubView ng-scope']/div[@class='ng-scope']/div[@class='SearchPageInnerPanel']/fieldset[@class='SearchSection2 search-panel1']/div[@class='not-padding']/div/div[@class='DisplayTableRowBreakable byLine'][1]/div[1]/div/div[3]/div[@id='lineNumberCombo']/div[@class='cb quarterList ComboPopup']/div[1]/input[@class='cb_edit autoCompleteValue ComboTextFilter ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse']")
 			
-			public static  WebElement lineNumList ;
+			//public static  WebElement lineNumList ;
 		
 	
 	

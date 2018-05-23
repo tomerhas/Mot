@@ -41,25 +41,15 @@ public class OriginDestination extends Base {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	/*@FindBy(how = How.XPATH, using = "//div[@id='bydestFromPlaceCombo']/button[@class='ComboButton']/div/div[@class='selectedItemDiv']/span[@class='ng-binding']")
-	public static  WebElement placeInOrigin ;*/
-	
-	
-	
-	
-	
-	
+		@FindBy(how = How.ID, using = "linesBetweenCheckbox")
+	public static  WebElement linesBetweenCheckbox ;
 	
 	
 	
 
+	
+	
+	
 	
 	
 	

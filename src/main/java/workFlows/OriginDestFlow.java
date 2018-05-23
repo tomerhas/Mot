@@ -37,6 +37,23 @@ public class OriginDestFlow {
 	
 	
 	
+   public static void clicklinesBetweenCheckbox() {
+		
+	   OriginDestination.linesBetweenCheckbox.click();
+		
+	
+	}
+   
+   
+   
+   public static void clearlinesBetweenCheckbox() {
+		
+	   OriginDestination.linesBetweenCheckbox.clear();
+		
+	
+	}
+	
+	
 	
 	
 	

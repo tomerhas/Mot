@@ -115,10 +115,10 @@ public void initLineNumber()
 		} catch (WebDriverException e) {
 			System.out.println(e.getMessage());*/
 		}
-		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		  
 		  //driver.navigate().to("http://tnuawebtst:8089");
 		  driver.navigate().to(" https://bus.gov.il");
-		 
+		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		  driver.manage().window().maximize();
 		  //origindestination = PageFactory.initElements(driver, OriginDestination.class);
 	  	  //  main = PageFactory.initElements(driver, Main.class);

@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
@@ -32,8 +33,7 @@ public class MainObjects extends Base  {
 	
 	
 	
-	
-	@FindBy(how = How.CLASS_NAME, using = " btnClearHeb1 ")
+	@FindBy(how = How.CLASS_NAME, using = "btnClearHeb1")
 	public static  WebElement buttonClear ;
 	
 	
@@ -52,6 +52,7 @@ public class MainObjects extends Base  {
 	
 	
 	@FindBy(how = How.CLASS_NAME, using = "userMessage")
+	@CacheLookup
 	public static  WebElement userMessage ;
 	
 	

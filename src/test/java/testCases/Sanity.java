@@ -78,31 +78,51 @@ public class Sanity extends Base {
 		 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ש");
 		 LineNumberFlow.typeDestFromCity("כפר נטר");
 	 	 Assertiones.assertValueExistsString(LineNumberFlow.getTextFromMessageNoServiceInSaturday("\\."), "לישוב כפר נטר אין שירות ביום מבוקש בחר יום אחר");
-	 System.out.println(SelectFrom.getIndexBy(LineNumber.DatesMessage, "ה"));
-	 LineNumberFlow.clickDatesMessage(LineNumber.DatesMessage, "ה");
-	 LineNumberFlow.typeLineNum("43");
-	 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ו");
-	 Assertiones.assertValueExists(MainObjects.userMessage, "קו לא פעיל ב יום ו");
-	 
-	 
-	 
 	
 	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	
-								
 	}
+	 
 	
 	
 	
 	
-	
+	 @Test
+	 
+	 public void assertLineNotExistsInDay ()  {
+		 
+		 MainFlow.clickTabLineNumber();
+		 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ש");
+		 LineNumberFlow.typeDestFromCity("כפר נטר");
+		 LineNumberFlow.clickDatesMessage(LineNumber.DatesMessage, "ה");
+		 LineNumberFlow.typeLineNum("43");
+		 SelectFrom.selectFromList(LineNumber.dates,LineNumber.bylineDateSelect,"יום ו");
+		 System.out.println(MainObjects.userMessage.getAttribute("innerText"));
+		 Assertiones.assertValueExists(MainObjects.userMessage, "קו לא פעיל ב יום ו");
+		 
+	 }
+	 
+	 
+	 
+	 @Test
+	 
+	 
+	 public void assertlineBetweenOriginClear()  {
+		 
+		 OriginDestFlow.clicklinesBetweenCheckbox();
+		 //System.out.println(OriginDestination.linesBetweenCheckbox.isSelected());
+		 MainFlow.clickclear();
+		 WaitTo.waitForElementVisible(driver, OriginDestination.linesBetweenCheckbox);
+		 //System.out.println(OriginDestination.linesBetweenCheckbox.isSelected());
+		 Assertiones.assertIsNotSelected(OriginDestination.linesBetweenCheckbox);
+		 
+		 
+	 		 		 
+	 }
+	 
+	 
+	 
+	 
+
 	
 	
 

@@ -31,4 +31,17 @@ public class Assertiones {
 	
 	
 	
+	public static void assertIsNotSelected  ( WebElement  element   )   {
+		
+		
+		Assert.assertFalse(element.isSelected());
+		
+				
+	}
+	
+	
+	
+	
+	
+	
 }

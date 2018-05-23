@@ -7,7 +7,7 @@
         <methods>
           <include name="afterMethod"/>
           <include name="createDriver"/>
-          <include name="assertOriginNotExistsInDay"/>
+          <include name="assertlineBetweenOriginClear"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
